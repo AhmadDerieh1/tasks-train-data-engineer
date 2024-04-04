@@ -1,7 +1,7 @@
-from Iextract_strategy import DataExtractionStrategy
+from Iextract_strategy import data_extract_strategy
 import re
-class ItemExtractionStrategy(DataExtractionStrategy):
-    def process_data(self, rows):
+class item_extract_strategy(data_extract_strategy):
+    def parser_data(self, rows):
         pattern = re.compile(r'(\d+)\s*x\s*\$(\d+\.\d+)')
         new_list = []
         items = []
